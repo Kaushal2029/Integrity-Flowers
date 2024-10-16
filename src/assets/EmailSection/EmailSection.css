@@ -1,0 +1,51 @@
+.subscribe-form-s{
+    width: 100%;
+      background-color:lightgrey;
+  }
+    
+  .subscribe-form h2 {
+      margin-bottom: 10px;
+    }
+    
+  .form-group {
+      display: inline-block;
+      margin-right: 10px;
+  }
+    
+  .form-group label {
+      margin-bottom: 5px;
+    }
+    
+  .form-group input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      
+    }
+    
+  .subscribe-button {
+      padding: 10px 20px;
+      background-color: #f08080; /* Light pink */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+  .subscribe-button:hover {
+      background-color: #ff0000; /* Darker pink */
+    }
+    
+  .privacy-policy {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    
+  .privacy-policy a {
+      color: #007bff; /* Blue color for link */
+      text-decoration: none;
+    }
+    
+  .privacy-policy a:hover {
+      text-decoration: underline;
+    }

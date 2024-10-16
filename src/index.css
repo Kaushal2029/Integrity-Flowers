@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif; /* Example of another font for body */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+footer {
+  font-family: 'Playfair Display', serif; /* Apply Playfair Display to footer */
+}
+
+
+

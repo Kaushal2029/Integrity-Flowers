@@ -1,0 +1,39 @@
+.shopping-container{
+    background-color: pink;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   width: 100%;
+}
+
+.features-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    font-size: 25px;
+    margin: 15px;
+}
+
+.shop-title{
+    font-size: 25px;
+    width: 18%;
+    display: flex;
+    display:inline;
+}
+
+.feature i{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopping-container p{
+    text-decoration: none;
+}
+
+.shopping-container p:hover{
+    text-decoration: underline;
+}
+
+
+  

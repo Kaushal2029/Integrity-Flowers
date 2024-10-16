@@ -1,0 +1,343 @@
+.navbar {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+  margin-top: -20px;
+  max-width: 70%;
+}
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.navbar-left-container input {
+  height: 40px;
+  outline: none;
+  padding-left: 10px;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 16px;
+  color: black;
+  transition: all 0.3s ease;
+  border: 1px solid black;
+}
+
+.navbar-left-container input:focus {
+  border-color: yellowgreen; 
+  box-shadow: 0 0 1px yellowgreen;
+}
+.navbar-logo {
+  height: 100px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+} 
+.navbar-logo img {
+  height: 100%;
+  width: 100%;
+}   
+
+.navbar-right-container .upper-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ .upper-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.lower-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.navbar-cart-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-words{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-words span{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navbar-links table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;  
+    margin-top: 20px;
+}
+
+.navbar-links table tr td{
+    border: 1px solid black;
+}
+.navbar-links table tr :first-child {
+    border-left: none;
+}
+
+.navbar-links table tr :last-child {
+    border-right: none;
+}
+.navbar-links table td, .navbar-links table th {
+    width: 150px; 
+    height: 40px; 
+}   
+
+.navbar-links table tr td button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(239, 237, 237);
+    }
+}
+
+.popup {
+  background-color: rgb(227, 223, 223);
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%); 
+  gap: 2rem;
+  z-index: 1;
+  width: 70%; 
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+.popup img {
+  margin-top: -100px;
+  width: 200px;
+  height: 200px;
+}
+.popup-button button {
+  width: 40%;
+  height: 50px;
+  border: 1px solid yellowgreen;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  margin-top: 50px;
+  position: absolute;
+  left: 30%;
+  bottom: 40px;
+}
+
+.popup-items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; 
+  gap: 1rem; 
+}
+
+.navbar-sign-in-register p,
+.navbar-cart-icons p {
+    position: relative; /* Add this line */
+}
+
+.navbar-sign-in-register p::after,
+.navbar-cart-icons p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Position it below the text */
+    height: 2px; /* Adjust the height of the line */
+    background-color: transparent; /* Default color */
+    cursor: pointer;
+}
+
+.navbar-sign-in-register p:hover::after,
+.navbar-cart-icons p:hover::after {
+    background-color: rgb(0, 0, 0); 
+    
+  }
+    
+
+
+
+@media (max-width: 768px) {
+  *{
+    width: 100%;
+  }
+  .upper-part {
+    display: none; /* Hide the menu items by default */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 10px;
+  }
+}
+
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  right: -300px; 
+  width: 300px; 
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+}
+
+.sidebar-container.open {
+  transition: all 0.5s ease;
+  right: 0;
+  padding: 15px;
+}
+
+
+.basket-header{
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;    
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;  
+}
+.basket-header span{
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+}
+
+.promo-code{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.promo-code-input{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-code-input input{
+  height: 100%; 
+  width: 80%; 
+  outline: none;
+  border: 1px solid greenyellow;  
+}
+
+.promo-code-input button{
+  height: 100%;
+  width: 30%;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: pink;
+color: #fff;
+}
+
+
+
+.order-summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+}
+.order-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.order-summary h2{
+    font-size: 15px;
+}
+
+
+.delivery-date{
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.delivery-date-text{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.basket-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.basket-buttons button{
+  width: 100%;
+}
+.remove-order{
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: pink;
+  color: #fff;
+  &:hover{
+    background-color: gray;
+  }
+}
+.checkout-button{
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: pink;
+  color: #fff;
+  &:hover{
+    background-color: gray;
+  }
+}
+
+.total{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  }
